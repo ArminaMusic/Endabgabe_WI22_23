@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="/src/ts/utils.js"
+      type="text/javascript"
+      charset="UTF-8"
+      async
+    ></script>
+    <script
+      src="/src/ts/moveable.js"
+      type="text/javascript"
+      charset="UTF-8"
+      async
+    ></script>
+    <script
+      src="/src/ts/particle.js"
+      type="text/javascript"
+      charset="UTF-8"
+      async
+    ></script>
+    <script
+      src="/src/ts/vector.js"
+      type="text/javascript"
+      charset="UTF-8"
+      async
+    ></script>
+    <script
+      src="/src/ts/firework.js"
+      type="text/javascript"
+      charset="UTF-8"
+      async
+    ></script>
     <title>Feuerwerk</title>
-</head>
-<body>
+  </head>
+  <body>
     <form class="configurator" action="">
       <label for="name">Name</label>
       <input required id="name" class="name" type="text" />
@@ -50,7 +81,6 @@
         <button>Testen</button>
       </div>
     </form>
-    <div class="preview"></div>
     <div class="preview">
       <canvas id="canvas" class="canvas"></canvas>
     </div>

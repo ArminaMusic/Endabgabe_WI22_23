@@ -10,7 +10,6 @@
     <form class="configurator" action="">
       <label for="name">Name</label>
       <input required id="name" class="name" type="text" />
-
       <label for="explosion_radius">Explosionsradius</label>
       <input
         required
@@ -18,15 +17,13 @@
         class="explosion_radius"
         type="range"
       />
-
-      <label for="explosion_particle_count">Partikel Anzahl</label>
+      <label for="explosion_particle_count">Partikelanzahl</label>
       <input
         required
         id="explosion_particle_count"
         class="explosion_particle_count"
         type="range"
       />
-
       <label for="explosion_color_1">Partikel Lebensdauer</label>
       <input
         required
@@ -34,7 +31,6 @@
         class="explosion_particle_livetime"
         type="range"
       />
-
       <label for="explosion_color_0">Farbe 1</label>
       <input
         required
@@ -42,7 +38,6 @@
         class="explosion_color_0 color_input"
         type="color"
       />
-
       <label for="explosion_color_1">Farbe 2</label>
       <input
         required
@@ -56,5 +51,8 @@
       </div>
     </form>
     <div class="preview"></div>
+    <div class="preview">
+      <canvas id="canvas" class="canvas"></canvas>
+    </div>
   </body>
 </html>

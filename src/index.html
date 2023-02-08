@@ -7,6 +7,54 @@
     <title>Feuerwerk</title>
 </head>
 <body>
-    
-</body>
+    <form class="configurator" action="">
+      <label for="name">Name</label>
+      <input required id="name" class="name" type="text" />
+
+      <label for="explosion_radius">Explosionsradius</label>
+      <input
+        required
+        id="explosion_radius"
+        class="explosion_radius"
+        type="range"
+      />
+
+      <label for="explosion_particle_count">Partikel Anzahl</label>
+      <input
+        required
+        id="explosion_particle_count"
+        class="explosion_particle_count"
+        type="range"
+      />
+
+      <label for="explosion_color_1">Partikel Lebensdauer</label>
+      <input
+        required
+        id="explosion_particle_livetime"
+        class="explosion_particle_livetime"
+        type="range"
+      />
+
+      <label for="explosion_color_0">Farbe 1</label>
+      <input
+        required
+        id="explosion_color_0"
+        class="explosion_color_0 color_input"
+        type="color"
+      />
+
+      <label for="explosion_color_1">Farbe 2</label>
+      <input
+        required
+        id="explosion_color_1"
+        class="explosion_color_1 color_input"
+        type="color"
+      />
+      <div class="form_buttons">
+        <button>Speichern</button>
+        <button>Testen</button>
+      </div>
+    </form>
+    <div class="preview"></div>
+  </body>
 </html>

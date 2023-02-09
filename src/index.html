@@ -16,41 +16,38 @@
     <form class="configurator" action="">
       <label for="name">Name</label>
       <input required id="name" class="name" type="text" />
-      <label for="explosion_radius">Explosionsradius</label>
-      <input
-        required
-        id="explosion_radius"
-        class="explosion_radius"
-        type="range"
-      />
-      <label for="explosion_particle_count">Partikelanzahl</label>
-      <input
-        required
-        id="explosion_particle_count"
-        class="explosion_particle_count"
-        type="range"
-      />
-      <label for="explosion_color_1">Partikel Lebensdauer</label>
-      <input
-        required
-        id="explosion_particle_livetime"
-        class="explosion_particle_livetime"
-        type="range"
-      />
-      <label for="explosion_color_0">Farbe 1</label>
-      <input
-        required
-        id="explosion_color_0"
-        class="explosion_color_0 color_input"
-        type="color"
-      />
-      <label for="explosion_color_1">Farbe 2</label>
-      <input
-        required
-        id="explosion_color_1"
-        class="explosion_color_1 color_input"
-        type="color"
-      />
+      <fieldset>
+        <legend>Partikel</legend>
+      <label for="particle_speed">Geschwindigkeit</label>
+      <input id="particle_speed" class="particle_speed" type="range" />
+      <label for="particle_particle_count">Anzahl</label>
+        <input
+          id="particle_particle_count"
+          class="particle_particle_count"
+          type="range"
+        />
+        <label for="particle_particle_livetime">Lebensdauer</label>
+        <input
+          id="particle_particle_livetime"
+          class="particle_particle_livetime"
+          type="range"
+        />
+        <label for="particle_gravity">Gravitation</label>
+        <input id="particle_gravity" class="particle_gravity" type="range" />
+
+        <label for="particle_friction">Wiederstand</label>
+        <input id="particle_friction" class="particle_friction" type="range" />
+
+        <label for="particle_decay">Verfall</label>
+        <input id="particle_decay" class="particle_decay" type="range" />
+
+        <label for="particle_base_color">Basis Farbe</label>
+        <input
+          id="particle_base_color"
+          class="particle_base_color color_input"
+          type="color"
+        />
+      </fieldset>
       <div class="form_buttons">
         <button>Speichern</button>
         <button>Testen</button>
